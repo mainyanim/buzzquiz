@@ -3,24 +3,81 @@
 <head>
   <title>BuzzQuiz</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/foo.js"</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   </head>
     <body>
+
       <!-- HEADER -->
+      <div id = "header">
+      </div>
       <!-- START -->
-      <div>
-        <img id = "startImg" src = "http://img3.rnkr-static.com/list_img_v2/17520/2317520/C480/rick-and-morty-memes-that-all-fans-will-laugh-at.jpg">
-        <button id = "startBtn">I am ready!</button>
+      <div id = "start">
+        <img src = "pic/page1.jpg" width="70%"></br>
+        <input type = "submit" value = "I am ready!" onclick="goToName()">
+      </div>
+      <!-- First Question -->
+      <div id = "name">
+        <p>What is your name?</p>
+          <img src = "pic/page2.jpg" width = "70%"></br>
+        <input id = "username" type = "text"></br>
+        <input type = "submit" onclick="showName();goToAge()">
+      </div>
+      <!-- SECOND Question -->
+      <div id = "age">
+        <p>What is your age?</p>
+          <img src = "pic/page3.jpg" width="65%"></br>
+        <input id = "userAge" type = "number"></br>
+        <input type = "submit" onclick = "showAge();goToGender()">
+      </div>
+      <!-- Third Question -->
+      <div id = "gender">
+        <p>What is your gender?</p>
+          <img src = "pic/gender/gender2.jpg" width="25%">
+          <img src = "pic/gender/gender1.jpg" width="25%">
+          <img src = "pic/gender/gender3.jpg" width="25%">
+          <form>
+            <input type="radio"  name="selectedGender" value="Female" />
+              Cute girl!
+            <input type="radio"  name="selectedGender" value="Male" />
+              Amazing man!
+            <input type="radio"  name="selectedGender" value="DUNNO" />
+              LOOK AT ME!
+          </form>
+        <input type = "submit" onclick = "showGender();goToInterests()">
+      </div>
+      <!-- Fourth Question -->
+      <div id = "interests">
+        <p>What you like to do the most?</p>
+          <input type = "image" src = "pic/likes/booze.jpg" id = "booze" value = "rick" width="256" height="256" onclick = "showInterestRick()">
+          <input type = "image" src = "pic/likes/girls.jpg" id = "girls" value = "morty" width="256" height="256" onclick = "showInterestMorty()">
+          <input type = "image" src = "pic/likes/boys.jpg" id = "boys" value = "summer" width="256" height="256" onclick = "showInterestSummer()"></br>
+
+          <input type = "image"  src = "pic/likes/home.jpg" id = "stayingHome" width="256" height="256" onclick = "showInterestMorty()">
+          <input type = "image"  src = "pic/likes/science.jpg" id = "science" width="256" height="256" onclick="showInterestRick()">
+          <input type = "image"  src = "pic/likes/parties.jpg" id = "parties" value = "summer" width="256" height="256" onclick="showInterestSummer()"></br>
+      <input type = "submit" onclick = "goToAdventure()">
+      </div>
+      <!-- Fifth Question -->
+      <div id = "adventure">
+        <p>How much do you like adventures?</p>
+          <img src = "pic/page6.jpg"></br>
+            <input type = "range" id = "adventureLover" value = "50">
+          <button onclick = "ifAdventure();goToResult();congratsYou()">Let's go!</button>
+      </div>
+      <!-- Result -->
+      <div id = "result">
+
       </div>
 
-      <!-- FIRST -->
     </body>
+    <script src="js/foo.js"></script>
+
   </html>
