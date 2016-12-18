@@ -1,15 +1,57 @@
 #name {
 display: none;
-background-image: local("pic/page1.jpg");
 }
 #btnToAge {
-  color: white;
+  background-color: green;
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  color:white;
+  margin-left: 380px;
+  border: 0;
+  background: green;
+  box-shadow:none;
+  border-radius: 0px;
 }
+#username {
+  height:20px;
+  display: inline-block;
+  margin-left: 350px;
+}
+#btnNext {
+  border: 0;
+  background: green;
+  box-shadow:none;
+  border-radius: 0px;
+  width:80px;
+  height:35px;
+  margin-left: 395px;
+  margin-top: 4px;
+  color: white;
+  font-size: 14px;
+}
+#userAge {
+  height:20px;
+  display: inline-block;
+  margin-left: 350px;
+}
+
 #age {
   display: none;
 }
 #gender {
   display: none;
+}
+.title {
+  font-size: 22px;
+  font-family: sans-serif;
+  margin-left: 350px;
+}
+input.radioinput {
+  margin-left: 155px;
+  margin-right: 20px;
+  padding-right: 60px;
 }
 #interests{
   display: none;

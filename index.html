@@ -20,42 +20,44 @@
       </div>
       <!-- START -->
       <div id = "start">
-        <img src = "pic/page1.jpg" width="70%"></br>
-        <input type = "submit" value = "I am ready!" onclick="goToName()">
+        <div id = "startPosition">
+          <img src = "pic/page1.jpg" width="70%"></br>
+          <input id = "btnToAge" type = "submit" value = "I am ready!" onclick="goToName()">
+        </div>
       </div>
       <!-- First Question -->
       <div id = "name">
-        <p>What is your name?</p>
+        <p class = "title">What is your name?</p>
           <img src = "pic/page2.jpg" width = "70%"></br>
         <input id = "username" type = "text"></br>
-        <input id = "btnToAge" type = "submit" onclick="showName();goToAge()">
+        <input id = "btnNext" type = "submit" onclick="showName();goToAge()">
       </div>
       <!-- SECOND Question -->
       <div id = "age">
-        <p>What is your age?</p>
+        <p class = "title">What is your age?</p>
           <img src = "pic/page3.jpg" width="65%"></br>
         <input id = "userAge" type = "number"></br>
-        <input type = "submit" onclick = "showAge();goToGender()">
+        <input id = "btnNext" type = "submit" onclick = "showAge();goToGender()">
       </div>
       <!-- Third Question -->
       <div id = "gender">
-        <p>What is your gender?</p>
+        <p class = "title">What is your gender?</p>
           <img src = "pic/gender/gender2.jpg" width="25%">
           <img src = "pic/gender/gender1.jpg" width="25%">
           <img src = "pic/gender/gender3.jpg" width="25%">
           <form>
-            <input type="radio"  name="selectedGender" value="Female" />
+            <input class = "radioinput" type="radio"  name="selectedGender" value="Female" />
               Cute girl!
-            <input type="radio"  name="selectedGender" value="Male" />
+            <input class = "radioinput" type="radio"  name="selectedGender" value="Male" />
               Amazing man!
-            <input type="radio"  name="selectedGender" value="DUNNO" />
+            <input class = "radioinput" type="radio"  name="selectedGender" value="DUNNO" />
               LOOK AT ME!
           </form>
-        <input type = "submit" onclick = "showGender();goToInterests()">
+        <input id = "btnNext" type = "submit" onclick = "showGender();goToInterests()">
       </div>
       <!-- Fourth Question -->
       <div id = "interests">
-        <p>What you like to do the most?</p>
+        <p class = "title">What you like to do the most?</p>
           <input type = "image" src = "pic/likes/booze.jpg" id = "booze" value = "rick" width="256" height="256" onclick = "showInterestRick()">
           <input type = "image" src = "pic/likes/girls.jpg" id = "girls" value = "morty" width="256" height="256" onclick = "showInterestMorty()">
           <input type = "image" src = "pic/likes/boys.jpg" id = "boys" value = "summer" width="256" height="256" onclick = "showInterestSummer()"></br>
@@ -63,14 +65,14 @@
           <input type = "image"  src = "pic/likes/home.jpg" id = "stayingHome" width="256" height="256" onclick = "showInterestMorty()">
           <input type = "image"  src = "pic/likes/science.jpg" id = "science" width="256" height="256" onclick="showInterestRick()">
           <input type = "image"  src = "pic/likes/parties.jpg" id = "parties" value = "summer" width="256" height="256" onclick="showInterestSummer()"></br>
-      <input type = "submit" onclick = "goToAdventure()">
+      <input id = "btnNext" type = "submit" onclick = "goToAdventure()">
       </div>
       <!-- Fifth Question -->
       <div id = "adventure">
-        <p>How much do you like adventures?</p>
+        <p class = "title">How much do you like adventures?</p>
           <img src = "pic/page6.jpg"></br>
             <input type = "range" id = "adventureLover" value = "50">
-          <button onclick = "ifAdventure();goToResult();congratsYou()">Let's go!</button>
+          <button id = "btnNext" onclick = "ifAdventure();goToResult();congratsYou()">Let's go!</button>
       </div>
       <!-- Result -->
       <div id = "result">

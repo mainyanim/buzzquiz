@@ -112,9 +112,9 @@ if (rickCounter > mortyCounter && rickCounter > summerCounter && rickCounter > m
    rickRes.setAttribute("src", "pic/meeseeks.jpg");
    result.appendChild(meeseeksRes);
 } else if (mortyCounter === rickCounter) {
-  document.write ("You are half Morty and half Rick! Wow!");
+  document.write ("You are half Morty and half Rick ",+document.getElementById("username").value+"! Wow!");
 } else if (summerCounter === rickCounter) {
-  document.write("You are half Summer and half Rick! How that's even possible?");
+  document.write("You are half Summer and half Rick "+document.getElementById("username").value+"! How that's even possible?");
 } else if (mrMeeseks === rickCounter) {
   document.write("You are half Mr. Meeseld and half Rick! Are you sure that you don't live in the wrong Universe?");
 } else if (mortyCounter === summerCounter) {
