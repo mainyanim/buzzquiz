@@ -1,5 +1,9 @@
 #name {
 display: none;
+background-image: local("pic/page1.jpg");
+}
+#btnToAge {
+  color: white;
 }
 #age {
   display: none;

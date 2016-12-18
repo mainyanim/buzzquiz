@@ -97,8 +97,8 @@ if (rickCounter > mortyCounter && rickCounter > summerCounter && rickCounter > m
   document.write("I am sorry "+document.getElementById("username").value+", you are Morty!");
   document.write("");
   var mortyRes = document.createElement("IMG");
-  mortyRes.setAttribute("src", "pic/morty.jpg");
-  document.body.appendChild(mortyRes);
+  document.body.setAttribute("src", "pic/morty.jpg");
+  result.appendChild(mortyRes);
 } else if (summerCounter > rickCounter && summerCounter > rickCounter && summerCounter > mrMeeseks) {
   document.write("Eeeeeegh "+document.getElementById("username").value+", you are Summer!");
   document.write("");
@@ -110,6 +110,18 @@ if (rickCounter > mortyCounter && rickCounter > summerCounter && rickCounter > m
    document.write("");
    var meeseeksRes = document.createElement("IMG");
    rickRes.setAttribute("src", "pic/meeseeks.jpg");
-   document.body.appendChild(meeseeksRes);
+   result.appendChild(meeseeksRes);
+} else if (mortyCounter === rickCounter) {
+  document.write ("You are half Morty and half Rick! Wow!");
+} else if (summerCounter === rickCounter) {
+  document.write("You are half Summer and half Rick! How that's even possible?");
+} else if (mrMeeseks === rickCounter) {
+  document.write("You are half Mr. Meeseld and half Rick! Are you sure that you don't live in the wrong Universe?");
+} else if (mortyCounter === summerCounter) {
+  document.write("Half Morty, half Summer... Maybe you are charecter from the 3rd season?");
+} else if (mortyCounter === mrMeeseks) {
+  document.write("Seems like good combo. Half Morty, half MrMeeseks!");
+} else if (summerCounter === mrMeeseks) {
+  document.write ("Nobody loves you, but you like to help. Half Summer, half Mr. Meeseks.");
 }
 }
