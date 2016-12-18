@@ -9,7 +9,6 @@ function goToName () {
 
 function showName () {
   var name = (document.getElementById("username").value);
-  console.log(document.getElementById("username").value);
 }
 function goToAge () {
   document.getElementById("name").style.display = "none";
@@ -18,7 +17,6 @@ function goToAge () {
 
 function showAge () {
   var userage = (document.getElementById("userAge").value);
-  console.log(document.getElementById("userAge").value);
   if (userage <=14) {
     mortyCounter++;
   } else if (userage >14 && userage <= 16) {
@@ -34,7 +32,6 @@ function goToGender () {
 
 function showGender () {
   var usergender = (document.querySelector('input[name="selectedGender"]:checked').value);
-  console.log(document.querySelector('input[name="selectedGender"]:checked').value);
   if (usergender === "Female") {
     summerCounter++;
   } else if (usergender==="Male") {
@@ -50,16 +47,13 @@ function goToInterests () {
 }
 
 function showInterestRick() {
-  console.log(document.getElementById("booze").value);
   rickCounter++;
 }
 function showInterestMorty() {
-console.log(document.getElementById("girls").value);
   mortyCounter++;
   mrMeeseks++;
 }
 function showInterestSummer () {
-  console.log(document.getElementById("boys").value);
   summerCounter++;
   mrMeeseks++;
 }
@@ -70,7 +64,6 @@ function goToAdventure () {
 
 function ifAdventure() {
   var ifLoveAdventure = (document.getElementById("adventureLover").value);
-  console.log(document.getElementById("adventureLover").value);
   if (ifLoveAdventure <= 33) {
     mortyCounter++;
   } else if (ifLoveAdventure > 33 && ifLoveAdventure <= 66) {
